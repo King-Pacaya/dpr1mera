@@ -1,0 +1,28 @@
+:root {
+--size: 70px;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'DM Sans', sans-serif;
+scroll-behavior: smooth;
+}
+
+.wbtn {
+position: fixed;
+bottom: 1vh;
+right: 1vw;
+height: var(--size);
+width: var(--size);
+z-index: 99;
+overflow: hidden;
+}
+  .wbtn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  }

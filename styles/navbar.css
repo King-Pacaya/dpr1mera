@@ -1,0 +1,87 @@
+.topnav {
+position: fixed;
+top: 0;
+width: 100%;
+height: 15vh;
+background-color: rgba(0, 0, 0, 60%);
+z-index: 99;
+padding: 0 2vw;
+transition: 0.3s;
+}
+
+.nava {
+position: relative;
+top: 50%;
+transform: translate(0, -50%);
+float: left;
+display: block;
+color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+font-size: 18px;
+margin: 0 .5vw;
+}
+
+.topnav img {
+position: relative;
+top: 50%;
+transform: translate(0, -50%);
+margin: 0 2vw;
+height: 85%;
+float: left;
+border: none;
+}
+
+
+.active {
+color: rgba(255, 255, 255, 1);
+border-bottom: solid #FFFF 2px;
+}
+
+.topnav .icon {
+display: none;
+}
+
+
+.nava:hover {
+  color: rgba(255, 255, 255, 1);
+  border-bottom: solid #FFFF 2px;
+}
+
+
+.fa-caret-down
+{
+position: absolute;
+top: 40%;
+transform: translate(0, -50%);
+padding: 0;
+margin: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+  .nava, .topnav img {
+  display: none;
+  }
+
+  .topnav .icon, .topnav.responsive .icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  color: #FFFFFF;
+  display: block;
+  font-size: 70px;
+  text-decoration: none;
+  }
+
+  .topnav.responsive a {
+  position: relative;
+  top: 20vh;
+  display: block;
+  float: none;
+  text-align: center;
+  font-size: 28px;
+  }
+}

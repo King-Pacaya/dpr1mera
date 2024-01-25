@@ -1,0 +1,167 @@
+/*General*/
+	header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	}
+		header img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 101%;
+		width: 101%;
+		filter: brightness(40%);
+		z-index: -1;
+		}
+	.mySlides {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	}
+	.mySlides div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: auto;
+	transform: translate(-50%, -50%);
+	}
+	.mySlides div p:nth-child(1) {
+	color: #ffffff;
+	font-size: 55px;
+	font-weight: 500;
+	font-family: 'DM Sans', sans-serif;
+	text-transform: capitalize;
+  margin: 0;
+  text-align: center;
+  padding: 2vh 0;
+	}
+	.mySlides div p:nth-child(2) {
+	color: #FFFFFF;
+	font-weight: 400;
+	margin: 0;
+	text-align: center;
+	padding: 2vh 0;
+	text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+	letter-spacing: 4px;
+	font-size: 22px;
+	font-weight: 400;
+	font-style: italic;
+	font-family: 'Roboto', sans-serif;
+	}
+	.mySlides div a
+	{
+	position: absolute;
+	width: 30%;
+	font-size: 22px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #505087;
+	color: #ffffff;
+	border-radius: 15px;
+	padding: 2vh 0;
+	margin: 2.5vh 35%;
+	transition: 0.3s ease;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	font-family: 'Poppins', sans-serif;
+	}
+	.mySlides div a:hover
+	{
+	background-color: #ffffff;
+	color: #505087;
+	}
+/*Images*/
+	.slideshow-container
+	{
+	width: 100%;
+	}
+
+	.fade
+	{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1s;
+	animation-name: fade;
+	animation-duration: 1s;
+	}
+
+	@keyframes fade
+	{
+	from {opacity: .8} 
+	to {opacity: 1}
+	}
+/*Responsive*/
+@media screen and (max-width: 900px)
+{
+	header img
+	{
+	height: 100%;
+	width: auto;
+	}
+	.mySlides div p:nth-child(1)
+	{
+	font-size: 6.5vw;
+	}
+	.mySlides div p:nth-child(2)
+	{
+	font-size: 4vw;
+	}
+	.mySlides div a
+	{
+	font-size: 2.5vw;
+	margin: 2.5vh 35%;
+	}
+}
+@media screen and (max-width: 700px)
+{
+	.mySlides div p:nth-child(1)
+	{
+	font-size: 8vw;
+	}
+	.mySlides div p:nth-child(2)
+	{
+	font-size: 4.5vw;
+	}
+	.mySlides div a
+	{
+	font-size: 3vw;
+	margin: 2.5vh 35%;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	.mySlides div p:nth-child(1)
+	{
+	font-size: 10.5vw;
+	}
+	.mySlides div p:nth-child(2)
+	{
+	font-size: 5vw;
+	}
+	.mySlides div a
+	{
+	font-size: 3.5vw;
+	width: 60%;
+	margin: 2.5vh 20%;
+	}
+}
+@media screen and (max-width: 300px)
+{
+	.mySlides div p:nth-child(1)
+	{
+	font-size: 13vw;
+	}
+	.mySlides div p:nth-child(2)
+	{
+	font-size: 6.5vw;
+	}
+	.mySlides div a
+	{
+	font-size: 5vw;
+	width: 60%;
+	margin: 2.5vh 20%;
+	}
+}

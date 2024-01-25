@@ -1,0 +1,194 @@
+#services {
+position: relative;
+width: 100%;
+height: auto;
+margin: 0;
+overflow: hidden;
+background-color: #e5e5e5;
+}
+	#services h1 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	padding: 2vh 0;
+	font-family: 'Alfa Slab One', cursive;
+	font-weight: 400;
+	font-size: 35px;
+	letter-spacing: 1px;
+	}
+	.sd {
+	position: relative;
+	float: left;
+	height: 65vh;
+	width: calc(100%/3.2);
+	margin: 2vh 1vw;
+	padding: 0 1vw;
+	transition: 0.3s ease;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+	background-color: #fff;
+	}
+		.sd div {
+		position: relative;
+		overflow: hidden;
+		height: 40%;
+		width: auto;
+		left: 50%;
+		margin: 2.5vh 0;
+		transform: translate(-50%, 0);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 15px;
+		}
+			.sd div img {
+			height: 100%;
+			width: auto;
+			border-radius: 15px;
+			transition: 0.3s ease;
+			}
+			.sd div img:hover {
+			transform: scale(1.1);
+			}
+		.sd p:nth-child(2) {
+		position: relative;
+		padding: 1vh 0;
+		font-size: 22px;
+		font-weight: bold;
+		color: #505087;
+		text-align: center;
+		margin: 0;
+		}
+		.sd p:nth-child(3) {
+		position: relative;
+		padding: 1vh 0;
+		font-size: 17px;
+		margin: 0;
+		}
+		.sd a {
+		position: absolute;
+		bottom: 2vh;
+		left: 1vw;
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #FF0015;
+		}
+
+#us {
+position: relative;
+height: auto;
+width: 100%;
+background-color: #505087;
+color: #fff;
+padding: 15vh 5%;
+}
+	#us h2 {
+	position: relative;
+	width: 100%;
+	height: 15vh;
+	font-size: 35px;
+	font-family: 'Alfa Slab One', cursive;
+	letter-spacing: 1px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	}
+	.ud {
+	position: relative;
+	height: 55vh;
+	width: 100%;
+	}
+	.udd {
+	position: relative;
+	height: 100%;
+	width: calc(50% - 7.5vw);
+	margin: 0 2.5vw;
+	float: left;
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: #fff;
+	color: #000;
+	}
+		.udd img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 101%;
+		}
+
+
+	.uslides {
+	display: none;
+	height: calc(100% - (5% + 17px));
+	margin: 0 8%;
+	overflow: hidden;
+	}
+		.uslides .utit {
+		position: relative;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		font-size: 45px;
+		width: 80%;
+		border-bottom: solid red 4px;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		height: calc(35% - (5% + 17px));
+		}
+		.uslides .upar {
+		position: relative;
+		padding: 1vh;
+		font-size: 17px;
+		height: calc(85% - (5% + 17px));
+		}
+
+	.uprev, .unext {
+	position: absolute;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6%;
+	height: 100%;
+	transition: 0.3s ease;
+	cursor: pointer;
+	}
+
+	.unext {
+	right: 0;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.uprev:hover, .unext:hover {
+	color: #fff;
+	background-color: rgba(0,0,0,0.8);
+	}
+
+	.dudot {
+	position: absolute;
+	height: 10%;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+	.udot {
+	cursor: pointer;
+	height: 17px;
+	width: 17px;
+	margin: 0 2px;
+	border: solid #121212 2px;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+	}
+
+	.uactive, .udot:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	}

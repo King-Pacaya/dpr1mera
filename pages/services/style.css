@@ -1,0 +1,89 @@
+#services {
+position: relative;
+height: auto;
+width: 100%;
+padding: 15vh 5%;
+background-color: #e5e5e5;
+}
+	#services h1 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-family: 'Alfa Slab One', cursive;
+	font-weight: 400;
+	font-size: 35px;
+	letter-spacing: 1px;
+	}
+	.sd {
+	position: relative;
+	margin: 3vh 0;
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	background-color: #fff;
+	padding: 0 1%;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+	overflow: hidden;
+	}
+	.sddi {
+	overflow: hidden;
+	height: 30vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+		.sddi img {
+		height: 95%;
+		border-radius: 15px;
+		}
+	.sdd {
+	position: relative;
+	width: 50%;
+	height: 50vh;
+	float: left;
+	padding: 0 1vw;
+	margin: 2vh 0;
+	overflow: auto;
+	}
+    .sdd::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+    }
+
+    .sdd::-webkit-scrollbar-thumb {
+    background: #505087;
+    border-radius: 5px;
+    }
+		.sdd .st {
+		font-weight: bold;
+		font-size: 20px;
+		padding: 1vh 0;
+		color: #505087;
+		}
+		.sdd .sp {
+		padding: 0 1vw;
+		font-size: 18px;
+		}
+
+	.sa {
+	position: relative;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2vh 0;
+	margin: 4vh 10%;
+	border-radius: 15px;
+	color: #121212;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #e5e5e5;
+	transition: 0.3s ease;
+	box-shadow: 0px 0px 15px rgb(0 0 0 / 50%);
+	}
+		.sa:hover {
+		background-color: #121212;
+		color: #fff;
+		}
